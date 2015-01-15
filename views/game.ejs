@@ -1,0 +1,36 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title> game Name </title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>		
+</head>	
+<body>
+	<div class = "container">	
+		<div id = "score">
+			<p>current score:<span><%= user.local.score %></span></p> 
+		</div>
+		<div id = "popUpWindow" class="col-sm-6 col-sm-offset-3">	
+			<a href="/login" class="btn btn-warning btn-lg"><span class="fa fa-user"></span> quit </a>
+        <a href="/game" class="btn btn-warning btn-lg"><span class="fa fa-user"></span> restart </a>	
+		</div>
+		<canvas id = "theCanvas"></canvas>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="assets/js/requestAnimationFrame.js"></script>
+		<script src="assets/js/Keys.js"></script>
+		<script src="assets/js/player.js"></script>
+		<script src="assets/js/trap.js"></script>
+		<script src="assets/js/game.js"></script>
+		
+		<script>
+			// Initialise the game
+			init();
+			animate();
+		</script>
+	</div><!-- end of container -->
+</body>
+
+</html>

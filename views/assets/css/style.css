@@ -1,0 +1,45 @@
+body{
+	margin			: 0px !important;
+	background-image: url('/assets/images/background.png' );
+}
+
+#theCanvas{
+	margin				: 0 auto;
+	display				: block;
+	background-color	: black;
+	background-image	: url( '/assets/images/border.png' ); 
+	background-size		: 100% 100%;
+	padding				: 15px;
+	margin-top			: 100px
+}
+
+#submit{
+	margin		: 0 auto;
+	width		: 300px;
+	padding-top	: 200px;	
+}
+
+#popUpWindow{
+	position		: absolute;
+	top				: 470px;
+	background-color: black;
+	display			: none;
+	width			: 218px;
+}
+
+.col-sm-offset-3 {
+	margin-left: 31%;
+}
+
+#score{
+	height		: 100px;
+	width		: 200px;
+	margin-top	: 150px;
+	position	: absolute;
+	right		: 200px;
+}
+
+#score p {
+	font-size	: 25px;
+	color		: #999966;;
+}
