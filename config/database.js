@@ -2,7 +2,7 @@
 
 //++++++++++++++++++++++++++++ connect with mongolab +++++++++++++++++++++++++++++++
 /*var	uriUtil	= require( 'mongodb-uri' ), //used to parse the mongodb URI	
-	mongodbUri = 'mongodb://user_namir:AgeOfDeath@ds051720.mongolab.com:51720/final-project-db';
+	mongodbUri = 'your mongo db url';
 
 
 
